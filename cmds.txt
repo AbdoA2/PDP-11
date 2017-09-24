@@ -1,0 +1,256 @@
+PCout, Zin, MARin, No Transfer, Add, No Action, Clear Y, Carry-in, No Flags, Next
+Zout, PCin, MDRin, No Transfer, Add, Read, No Action, No Carry, No Flags, Next
+MDRout, IRin, No Transfer, No Transfer, Add, No Action, No Action, No Carry, No Flags, Next
+No Transfer, No Transfer, No Transfer, No Transfer, Add, No Action, No Action, No Carry, No Flags, PLA
+
+
+
+SOURCEout, Zin, No Transfer, No Transfer, OR, No Action, Clear Y, No Carry, Flags, ORdstInd
+
+
+Zout, No Transfer, MDRin, No Transfer, Add, Write, No Action, No Carry, No Flags, Next
+Zout, Rdstin, No Transfer, No Transfer, Add, No Action, No Action, No Carry, No Flags, Next
+No Transfer, Zin, No Transfer, No Transfer, A, No Action, No Action, No Carry, No Flags, Next
+Zout, No Transfer, TEMPin, No Transfer, Add, No Action, No Action, No Carry, No Flags, Next
+SOURCEout, No Transfer, No Transfer, Yin, Add, No Action, No Action, No Carry, No Flags, Next
+No Transfer, No Transfer, No Transfer, No Transfer, Sub, No Action, No Action, No Carry, Flags, Next
+No Transfer, No Transfer, No Transfer, No Transfer, Sub, No Action, No Action, No Carry, Flags, Next
+No Transfer, Zin, No Transfer, No Transfer, Dec, No Action, No Action, No Carry, No Flags, Next
+Rsrcout, No Transfer, MARin, No Transfer, Add, Read, No Action, No Carry, No Flags, PLA
+
+Rsrcout, No Transfer, MARin, No Transfer, Add, Read, Clear Y, Carry-in, No Flags, Next
+Zout, Rsrcin, No Transfer, No Transfer, Add, No Action, No Action, No Carry, No Flags, ORsrcInd
+MDRout, No Transfer, MARin, No Transfer, Add, Read, No Action, No Carry, No Flags, Next
+No Transfer, No Transfer, No Transfer, No Transfer, AND, No Action, No Action, Carry-in, Flags, Next
+Rsrcout, No Transfer, No Transfer, Yin, Add, No Action, No Action, No Carry, No Flags, Next
+Zout, Rsrcin, MARin, No Transfer, Add, Read, No Action, No Carry, No Flags, ORsrcInd
+Zout, No Transfer, MARin, No Transfer, Add, Read, No Action, No Carry, No Flags, ORsrcInd
+
+PCout, Zin, MARin, No Transfer, Add, Read, No Action, Carry-in, No Flags, Next
+Zout, PCin, No Transfer, No Transfer, Add, No Action, No Action, No Carry, No Flags, Next
+MDRout, No Transfer, No Transfer, Yin, Add, No Action, No Action, No Carry, No Flags, Next
+Rsrcout, Zin, No Transfer, No Transfer, Add, No Action, No Action, No Carry, No Flags, Next
+
+
+
+
+
+
+
+
+Rdstout, No Transfer, No Transfer, Yin, Add, No Action, No Action, No Carry, No Flags, Funct
+No Transfer, Zin, No Transfer, No Transfer, Dec, No Action, No Action, No Carry, No Flags, Next
+Rdstout, No Transfer, MARin, No Transfer, Add, Read, No Action, No Carry, No Flags, ORdstInd
+
+Rdstout, Zin, MARin, No Transfer, Add, Read, No Action, Carry-in, No Flags, Next
+Zout, Rdstin, No Transfer, No Transfer, Add, No Action, No Action, No Carry, No Flags, ORdstInd
+MDRout, No Transfer, MARin, No Transfer, Add, Read, No Action, No Carry, No Flags, Next
+MDRout, No Transfer, No Transfer, Yin, Add, No Action, No Action, No Carry, No Flags, Funct
+
+
+Rdstout, No Transfer, No Transfer, Yin, Add, No Action, No Action, No Carry, No Flags, Next
+Zout, Rdstin, MARin, No Transfer, Add, Read, No Action, No Carry, No Flags, ORdstInd
+Zout, No Transfer, MARin, No Transfer, Add, Read, No Action, No Carry, No Flags, ORdstInd
+
+PCout, Zin, MARin, No Transfer, Add, Read, No Action, Carry-in, No Flags, Next
+Zout, PCin, No Transfer, No Transfer, Add, No Action, No Action, No Carry, No Flags, Next
+MDRout, No Transfer, No Transfer, Yin, Add, No Action, No Action, No Carry, No Flags, Next
+Rdstout, Zin, No Transfer, No Transfer, Add, No Action, No Action, No Carry, No Flags, Next
+
+
+
+
+
+
+
+No Transfer, No Transfer, No Transfer, No Transfer, Add, No Action, No Action, No Carry, No Flags, Funct
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+No Transfer, Zin, No Transfer, No Transfer, SLL, No Action, No Action, No Carry, Flags, ORdstInd
+SOURCEout, Zin, No Transfer, No Transfer, AND, No Action, No Action, Carry-in, Flags, ORdstInd
+No Transfer, Zin, No Transfer, No Transfer, SLL, No Action, Clear Y, No Carry, Flags, ORdstInd
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

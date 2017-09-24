@@ -1,0 +1,34 @@
+Library ieee;
+Use ieee.std_logic_1164.all;
+
+Entity flags is
+  Generic (N: integer := 4);
+  port(clk, rst: in std_logic;
+       d, en: in std_logic_vector(N-1 downto 0);
+       q: out std_logic_vector(N-1 downto 0));
+end flags;
+
+Architecture a_flags of flags is
+  begin
+    Process (clk, rst, en)
+      begin
+        if rst = '1' then
+          q <= (others=>'0');
+        elsif rising_edge(clk) then
+          if en(0) = '1' then
+            q(0) <= d(0);
+          end if;
+          if en(1) = '1' then
+            q(1) <= d(1);
+          end if;
+          if en(2) = '1' then
+            q(2) <= d(2);
+          end if;
+          if en(3) = '1' then
+            q(3) <= d(3);
+          end if;
+      end if;
+    end process;
+  end a_flags;
+
+

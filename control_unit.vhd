@@ -1,0 +1,140 @@
+library IEEE;
+use ieee.std_logic_1164.all;
+
+entity control_unit is
+  port (control_word: in STD_LOGIC_VECTOR(31 downto 0);
+        instruction: in STD_LOGIC_VECTOR(15 downto 0);
+        flags: in STD_LOGIC_VECTOR(3 downto 0);
+        -- REGS
+        MDR_IN, MAR_IN, IR_IN, Z_IN, Y_IN, REGS_IN: out STD_LOGIC;
+        MDR_OUT, Z_OUT, REGS_OUT: out STD_LOGIC;
+        --SPECIAL REGS
+        SRC_IN, DST_IN, TMP_IN: out STD_LOGIC;
+        SRC_OUT, DST_OUT, TMP_OUT: out STD_LOGIC;
+        -- REGS
+        src_reg, dst_reg: out STD_LOGIC_VECTOR(1 downto 0);
+        -- RAM
+        read_memory, write_memory: out STD_LOGIC;
+        -- ALU
+        aluop: out STD_LOGIC_VECTOR(3 downto 0);
+        CARRY_IN: out STD_LOGIC;
+        -- CLEAR Y
+        CLR_Y: out STD_LOGIC;
+        -- Next Address
+        next_address: out STD_LOGIC_VECTOR(7 downto 0));
+end control_unit;
+
+architecture control_unit_impl of control_unit is
+  signal f0, next_ORed: STD_LOGIC_VECTOR(7 downto 0);
+  signal f1, f10: STD_LOGIC_VECTOR(3 downto 0);
+  signal f2: STD_LOGIC_VECTOR(2 downto 0);
+  signal f3, f4, f6: STD_LOGIC_VECTOR(1 downto 0);
+  signal f1_decoded: STD_LOGIC_VECTOR(15 downto 0);
+  signal f2_decoded: STD_LOGIC_VECTOR(7 downto 0);
+  signal f3_decoded, f4_decoded, f6_decoded: STD_LOGIC_VECTOR(3 downto 0);
+  signal opcode: STD_LOGIC_VECTOR(5 downto 0);
+  signal src_mode, dst_mode: STD_LOGIC_VECTOR(2 downto 0);
+   -- BIT ORing
+  
+  -- f5: aluop
+  begin
+    
+    -- decode F1
+    f1 <= control_word(23 downto 20);
+    decoder_f1: entity work.decoder generic map(4) port map(f1, f1_decoded, '1');
+    MDR_OUT <= f1_decoded(2);
+    Z_OUT <= f1_decoded(3);
+    REGS_OUT <= (f1_decoded(1) or f1_decoded(4) or f1_decoded(5));
+    SRC_OUT <= f1_decoded(8);
+    DST_OUT <= f1_decoded(9);
+    TMP_OUT <= f1_decoded(10);
+    process(f1, instruction) begin
+      if f1 = "0100" then
+        src_reg <= instruction(6 downto 5);
+      elsif f1 = "0001" then
+        src_reg <= "11";
+      elsif f1 = "0101" then
+        src_reg <= instruction(1 downto 0);
+      else
+        src_reg <= "00";    
+      end if;
+    end process;
+    
+    -- decode f2
+    f2 <= control_word(19 downto 17);
+    decoder_f2: entity work.decoder generic map(3) port map(f2, f2_decoded, '1');
+    REGS_IN <= (f2_decoded(1) or f2_decoded(4) or f2_decoded(5));
+    IR_IN <= f2_decoded(2);
+    Z_IN <= f2_decoded(3);
+    process(f2, instruction) begin
+      if f2 = "100" then
+        dst_reg <= instruction(6 downto 5);
+      elsif f2 = "001" then -- PC
+        dst_reg <= "11";
+      elsif f2 = "101" then
+        dst_reg <= instruction(1 downto 0);
+      else
+        dst_reg <= "00";
+      end if;
+    end process;
+
+    -- decode f3
+    f3 <= control_word(16 downto 15);
+    decoder_f3: entity work.decoder generic map(2) port map(f3, f3_decoded, '1');
+    MAR_IN <= f3_decoded(1);
+    MDR_IN <= f3_decoded(2);
+    TMP_IN <= f3_decoded(3);
+    
+    -- decode f4
+    f4 <= control_word(14 downto 13);
+    decoder_f4: entity work.decoder generic map(2) port map(f4, f4_decoded, '1');
+    Y_IN <= f4_decoded(1);
+    SRC_IN <= f4_decoded(2);
+    DST_IN <= f4_decoded(3);
+    
+    -- set the alu operation
+    aluop <= control_word(12 downto 9);
+    
+    -- set memory read and write
+    f6 <= control_word(8 downto 7);
+    decoder_f6: entity work.decoder generic map(2) port map(f6, f6_decoded, '1');
+    read_memory <= f6_decoded(1);
+    write_memory <= f6_decoded(2);
+ 
+    -- CLEAR Y
+    CLR_Y <= control_word(6);
+    -- set src_reg and dst_reg
+    
+    CARRY_IN <= control_word(5);
+    
+    -- BIT ORing (next address field)
+    f0 <= control_word(31 downto 24);
+    f10 <= control_word(3 downto 0);
+    opcode <= instruction(15 downto 10);
+    
+    src_mode <= instruction(9 downto 7);
+    dst_mode <= instruction(4 downto 2);
+    
+    process (instruction, f10) begin
+      if f10 = "0001" then
+        if opcode(5 downto 4) = "00" then -- At the beginning, two operands, go fetch source
+          next_ORed <= "0001" & src_mode(2 downto 1) & (not (src_mode(2) or src_mode(1)) and src_mode(0)) & "0";
+        elsif opcode(5 downto 4) = "10" then -- At the beginning, double operands, go fetch dest, no source
+          next_ORed <= "0010" & dst_mode(2 downto 1) & (not (dst_mode(2) or dst_mode(1)) and dst_mode(0)) & "0";
+        end if;
+      elsif f10 = "0010" then -- Goto next address directly
+        next_ORed <= x"00";
+      elsif f10 = "0101" then -- Goto destination fetch, after fetching the source
+        next_ORed <= "0010" & dst_mode(2 downto 1) & (not (dst_mode(2) or dst_mode(1)) and dst_mode(0)) & "0";
+      elsif f10 = "0011" then -- OR source indirect
+        next_ORed <= "0000000" & not src_mode(0);
+      elsif f10 = "0100" then -- OR dest indirect
+        next_ORed <= "0000000" & not dst_mode(0);        
+      end if;
+    end process;
+    
+    next_address <= f0 or next_ORed;
+    
+  end;
+        
+        

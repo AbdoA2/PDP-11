@@ -1,0 +1,1030 @@
+m255
+K3
+13
+cModel Technology
+dF:\Projects\VHDL\Lab4
+Eadder
+Z0 w1451215267
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 dF:\Projects\VHDL\PDP11
+Z4 8F:/Projects/VHDL/PDP11/my_adder.vhd
+Z5 FF:/Projects/VHDL/PDP11/my_adder.vhd
+l0
+L21
+VN9DHePYZB2XjWH38<ZPBQ1
+Z6 OV;C;10.1d;51
+32
+Z7 !s108 1451215270.693000
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/Projects/VHDL/PDP11/my_adder.vhd|
+Z9 !s107 F:/Projects/VHDL/PDP11/my_adder.vhd|
+Z10 o-work work -2002 -explicit -O0
+Z11 tExplicit 1
+!s100 9@YDmmDXA06?6mORJDW7i3
+!i10b 1
+Aaddersynth
+R1
+R2
+DEx4 work 5 adder 0 22 N9DHePYZB2XjWH38<ZPBQ1
+l37
+L30
+VOAdVXgJ`;Aa]aIcDEbZeS1
+R6
+32
+R7
+R8
+R9
+R10
+R11
+!s100 zeBkK:9f>E>^EOkCz@dd<3
+!i10b 1
+Ealsu
+Z12 w1451989940
+R1
+R2
+R3
+Z13 8F:/Projects/VHDL/PDP11/ALSU.vhd
+Z14 FF:/Projects/VHDL/PDP11/ALSU.vhd
+l0
+L4
+V7O8D]?kW?54FeMLdbP`[g1
+R6
+32
+Z15 !s108 1451989949.380000
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/Projects/VHDL/PDP11/ALSU.vhd|
+Z17 !s107 F:/Projects/VHDL/PDP11/ALSU.vhd|
+R10
+R11
+!s100 P[9lZGMb>V_;8@?1i`eFO2
+!i10b 1
+Aalsui
+Z18 DEx4 work 9 mux4_1bit 0 22 zbN4G;e0LR^W`CM[5zz3O0
+R1
+R2
+Z19 DEx4 work 4 alsu 0 22 7O8D]?kW?54FeMLdbP`[g1
+l48
+L13
+VO@QAPTEhN@QKY^F>@ga6l3
+R6
+32
+R15
+R16
+R17
+R10
+R11
+!s100 F3zMY7ezD8FS?lj[n5=0g3
+!i10b 1
+Econtrol_uint
+w1450447208
+R1
+R2
+R3
+Z20 8F:/Projects/VHDL/PDP11/control_unit.vhd
+Z21 FF:/Projects/VHDL/PDP11/control_unit.vhd
+l0
+L4
+VfZK<DYE^BFoZ]9jG`=MiN1
+R6
+32
+R10
+R11
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/Projects/VHDL/PDP11/control_unit.vhd|
+Z23 !s107 F:/Projects/VHDL/PDP11/control_unit.vhd|
+!s100 GCboIaaMJiBP[iI[IP3f11
+!i10b 1
+!s108 1450447214.373000
+Econtrol_unit
+Z24 w1452010858
+R1
+R2
+R3
+R20
+R21
+l0
+L4
+VmCRWcZ6>H4DiZd1l1Jk<h1
+!s100 GoT^h?H@1=Ig7Clgi<Xa43
+R6
+32
+!i10b 1
+Z25 !s108 1452010879.858000
+R22
+Z26 !s107 F:/Projects/VHDL/PDP11/control_unit.vhd|
+R10
+R11
+Acontrol_unit_impl
+Z27 DPx4 ieee 20 numeric_std_unsigned 0 22 zGP<0Dn2<W46=JIJY=Od63
+Z28 DEx4 work 7 decoder 0 22 [DBjaKe@[6YXg<NmOilWC0
+R1
+R2
+Z29 DEx4 work 12 control_unit 0 22 mCRWcZ6>H4DiZd1l1Jk<h1
+l40
+L27
+V?^4D?<TTZ]KNR>L>3SV]72
+!s100 IRl=@16iF:;6kYLmbS8bT0
+R6
+32
+!i10b 1
+R25
+R22
+R26
+R10
+R11
+Edatapath
+Z30 w1452006493
+R27
+R1
+R2
+R3
+Z31 8F:/Projects/VHDL/PDP11/datapath.vhd
+Z32 FF:/Projects/VHDL/PDP11/datapath.vhd
+l0
+L5
+VQ483hZkelc<B:X>]K5O`H1
+R6
+32
+Z33 !s108 1452006498.510000
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/Projects/VHDL/PDP11/datapath.vhd|
+Z35 !s107 F:/Projects/VHDL/PDP11/datapath.vhd|
+R10
+R11
+!s100 nNZOOeT[G[9U=U@lfD;`R2
+!i10b 1
+Adatapathsynth
+Z36 DEx4 work 5 flags 0 22 FAIzC]WTdM94z87n3;<Mn1
+R19
+Z37 DEx4 work 12 special_regs 0 22 P`]T7UXPX^1Bi7e0Rc_4Y1
+Z38 DEx4 work 7 regfile 0 22 m<_2?lX8R?X^LBkS5P^jE2
+Z39 DEx4 work 9 tri_state 0 22 akEVBdY_@C9J?;^>cJYho1
+Z40 DEx4 work 7 my_ndff 0 22 ]m=ED2czQk3LEdkG98e=Z1
+R27
+R1
+R2
+Z41 DEx4 work 8 datapath 0 22 Q483hZkelc<B:X>]K5O`H1
+l33
+L28
+V8Jc5I?]^=^aYm859fDiVP2
+R6
+32
+R33
+R34
+R35
+R10
+R11
+!s100 46EF[GUdlQ9CJOj6ZFKKd1
+!i10b 1
+Edecoder
+Z42 w1445597960
+R27
+R1
+R2
+R3
+Z43 8F:/Projects/VHDL/PDP11/decoder.vhd
+Z44 FF:/Projects/VHDL/PDP11/decoder.vhd
+l0
+L5
+V[DBjaKe@[6YXg<NmOilWC0
+R6
+32
+Z45 !s108 1450454299.148000
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/Projects/VHDL/PDP11/decoder.vhd|
+Z47 !s107 F:/Projects/VHDL/PDP11/decoder.vhd|
+R10
+R11
+!s100 LYc6^I5QhG^WB4gCK3Zfg1
+!i10b 1
+Adecodersynth
+R27
+R1
+R2
+R28
+l13
+L12
+VZTkY]M3UNJdaJkI?ISl`f0
+R6
+32
+R45
+R46
+R47
+R10
+R11
+!s100 >ST;c2lehLM3dnjC2imm51
+!i10b 1
+Eflags
+Z48 w1450442686
+R1
+R2
+R3
+Z49 8F:/Projects/VHDL/PDP11/flags.vhd
+Z50 FF:/Projects/VHDL/PDP11/flags.vhd
+l0
+L4
+VFAIzC]WTdM94z87n3;<Mn1
+R6
+32
+Z51 !s108 1450454302.841000
+Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/Projects/VHDL/PDP11/flags.vhd|
+Z53 !s107 F:/Projects/VHDL/PDP11/flags.vhd|
+R10
+R11
+!s100 9M:K3zl]kNJE41QZW@lDI3
+!i10b 1
+Aa_flags
+R1
+R2
+R36
+l12
+L11
+Vg@S@e_<<jkj=89^:I8XYC3
+R6
+32
+R51
+R52
+R53
+R10
+R11
+!s100 U94902O]:KM`F;^dT9Lg_2
+!i10b 1
+Emux
+Z54 w1443566957
+R1
+R2
+R3
+Z55 8F:/Projects/VHDL/PDP11/mux_beh.vhd
+Z56 FF:/Projects/VHDL/PDP11/mux_beh.vhd
+l0
+L5
+VIAj:@AjHTiGl`zSNF9j[R1
+R6
+32
+Z57 !s108 1450454291.488000
+Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/Projects/VHDL/PDP11/mux_beh.vhd|
+Z59 !s107 F:/Projects/VHDL/PDP11/mux_beh.vhd|
+R10
+R11
+!s100 hQR6VmOUJ@hAf:8BKkKM>0
+!i10b 1
+Abehav
+R1
+R2
+DEx4 work 3 mux 0 22 IAj:@AjHTiGl`zSNF9j[R1
+l13
+L12
+VTF^HZH@Yi[aHLF_3azRAi1
+R6
+32
+R57
+R58
+R59
+R10
+R11
+!s100 RO3MRfLgam[?V=a@bQ=d93
+!i10b 1
+Emux2
+Z60 w1412944258
+R3
+Z61 8F:/Projects/VHDL/PDP11/mux2.vhd
+Z62 FF:/Projects/VHDL/PDP11/mux2.vhd
+l0
+L3
+VVAI7RcPn7MQnJ3N3[Ak^h2
+R6
+32
+Z63 !s108 1450454293.643000
+Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/Projects/VHDL/PDP11/mux2.vhd|
+Z65 !s107 F:/Projects/VHDL/PDP11/mux2.vhd|
+R10
+R11
+!s100 dgGG^;_GDoIk_^;dPcF5[3
+!i10b 1
+Adata_flow
+DEx4 work 4 mux2 0 22 VAI7RcPn7MQnJ3N3[Ak^h2
+l10
+L9
+VhRW2VgDN9M7;T[J[g<;O71
+R6
+32
+R63
+R64
+R65
+R10
+R11
+!s100 S`djGAo9R0Z29Pi=K6f991
+!i10b 1
+Emux4
+Z66 w1444222578
+R1
+R2
+R3
+Z67 8F:/Projects/VHDL/PDP11/mux_df.vhd
+Z68 FF:/Projects/VHDL/PDP11/mux_df.vhd
+l0
+L4
+VS8mGLPnX1aFll2lSKZDRi3
+R6
+32
+Z69 !s108 1450454292.021000
+Z70 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/Projects/VHDL/PDP11/mux_df.vhd|
+Z71 !s107 F:/Projects/VHDL/PDP11/mux_df.vhd|
+R10
+R11
+!s100 mCb=jk9AG=a[Hi>eo2I<62
+!i10b 1
+Adata_flow
+R1
+R2
+DEx4 work 4 mux4 0 22 S8mGLPnX1aFll2lSKZDRi3
+l13
+L12
+VCHWGV8`EDgJGTK10H1EX=3
+R6
+32
+R69
+R70
+R71
+R10
+R11
+!s100 Un[55JZ0izmd:R4Ak15J23
+!i10b 1
+Emux4_1bit
+Z72 w1451989895
+R1
+R2
+R3
+Z73 8F:/Projects/VHDL/PDP11/mux4.vhd
+Z74 FF:/Projects/VHDL/PDP11/mux4.vhd
+l0
+L4
+VzbN4G;e0LR^W`CM[5zz3O0
+R6
+32
+Z75 !s108 1451989899.379000
+Z76 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/Projects/VHDL/PDP11/mux4.vhd|
+Z77 !s107 F:/Projects/VHDL/PDP11/mux4.vhd|
+R10
+R11
+!s100 EWO<1kzJ1Z5ofUQMk5h3S3
+!i10b 1
+Adata_flow
+R1
+R2
+R18
+l13
+L12
+V_9?;S0PdhfGKOen>?[h0B1
+R6
+32
+R75
+R76
+R77
+R10
+R11
+!s100 HIdoUzY1`MQU1CbfLCl9H1
+!i10b 1
+Emux8
+Z78 w1412944262
+R3
+Z79 8F:/Projects/VHDL/PDP11/mux8.vhd
+Z80 FF:/Projects/VHDL/PDP11/mux8.vhd
+l0
+L2
+Vh8KTQJ_hG0R9<lfmdgAUf1
+R6
+32
+Z81 !s108 1450454294.373000
+Z82 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/Projects/VHDL/PDP11/mux8.vhd|
+Z83 !s107 F:/Projects/VHDL/PDP11/mux8.vhd|
+R10
+R11
+!s100 n2Y4oQF3T>L74jL?iU_i?2
+!i10b 1
+Astruct
+DEx4 work 4 mux8 0 22 h8KTQJ_hG0R9<lfmdgAUf1
+l21
+L9
+VXbc15K@bi;SS3W;1T9CkE1
+R6
+32
+R81
+R82
+R83
+R10
+R11
+!s100 8lBAk6K^e5ZocmXdY=`R30
+!i10b 1
+Emux_seq
+Z84 w1444213566
+R1
+R2
+R3
+Z85 8F:/Projects/VHDL/PDP11/mux_seq.vhd
+Z86 FF:/Projects/VHDL/PDP11/mux_seq.vhd
+l0
+L5
+VdD4X<R2`FFM_5M>McC;i_1
+R6
+32
+Z87 !s108 1450454292.643000
+Z88 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/Projects/VHDL/PDP11/mux_seq.vhd|
+Z89 !s107 F:/Projects/VHDL/PDP11/mux_seq.vhd|
+R10
+R11
+!s100 :SPB3S8ALIXUGgE>]jPFE0
+!i10b 1
+Ab_mux_seq
+R1
+R2
+Z90 DEx4 work 7 mux_seq 0 22 dD4X<R2`FFM_5M>McC;i_1
+l34
+L33
+Vnihl_0`ToOVmSn_BY>RPC1
+R6
+32
+R87
+R88
+R89
+R10
+R11
+!s100 1k=lW:Mbi7>a;9:OV[L?>2
+!i10b 1
+Aa_mux_seq
+R1
+R2
+R90
+l14
+L13
+VHJ<Hek=fmCSGzZ@4<eaNo0
+R6
+32
+R87
+R88
+R89
+R10
+R11
+!s100 WPd5Vi4I@i6i[lzDL[il`3
+!i10b 1
+Emy_adder
+Z91 w1451215267
+R1
+R2
+R3
+R4
+R5
+l0
+L4
+VO2P:VbeLW;L05i^U;8bA^0
+R6
+32
+R7
+R8
+R9
+R10
+R11
+!s100 kjX9oACNbZRRXc_<daa:30
+!i10b 1
+Aa_my_adder
+R1
+R2
+DEx4 work 8 my_adder 0 22 O2P:VbeLW;L05i^U;8bA^0
+l10
+L9
+Vk<gY`5cGLeYR3mC5Zkz8<2
+R6
+32
+R7
+R8
+R9
+R10
+R11
+!s100 [8Jdg@SiGiJM[CldMcS`:1
+!i10b 1
+Emy_dff
+Z92 w1414661298
+R1
+R2
+R3
+Z93 8F:/Projects/VHDL/PDP11/my_dff.vhd
+Z94 FF:/Projects/VHDL/PDP11/my_dff.vhd
+l0
+L3
+V]Z7SidW_D1I_aS;QOAmAh3
+R6
+32
+Z95 !s108 1450454299.678000
+Z96 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/Projects/VHDL/PDP11/my_dff.vhd|
+Z97 !s107 F:/Projects/VHDL/PDP11/my_dff.vhd|
+R10
+R11
+!s100 5:dS4gbo_V96@o:IH_F@20
+!i10b 1
+Aa_my_dff
+R1
+R2
+DEx4 work 6 my_dff 0 22 ]Z7SidW_D1I_aS;QOAmAh3
+l9
+L8
+V]>9mYlVjH>>4HHJOkQVeN0
+R6
+32
+R95
+R96
+R97
+R10
+R11
+!s100 8B;c`P;E`caQIK96bM2I71
+!i10b 1
+Emy_ndff
+Z98 w1445200757
+R1
+R2
+R3
+Z99 8F:/Projects/VHDL/PDP11/my_ndff.vhd
+Z100 FF:/Projects/VHDL/PDP11/my_ndff.vhd
+l0
+L4
+V]m=ED2czQk3LEdkG98e=Z1
+R6
+32
+Z101 !s108 1450454300.135000
+Z102 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/Projects/VHDL/PDP11/my_ndff.vhd|
+Z103 !s107 F:/Projects/VHDL/PDP11/my_ndff.vhd|
+R10
+R11
+!s100 R0G?gkzV>Ei5b5Y;n6hXb1
+!i10b 1
+Aa_my_ndff
+R1
+R2
+R40
+l12
+L11
+Vd@TSiKAc_cU<H2:Mh@JO:3
+R6
+32
+R101
+R102
+R103
+R10
+R11
+!s100 ES;N8?Gd^BXZd:CUU5A8Q3
+!i10b 1
+Eparta
+Z104 w1451215307
+R1
+R2
+R3
+Z105 8F:/Projects/VHDL/PDP11/partA.vhd
+Z106 FF:/Projects/VHDL/PDP11/partA.vhd
+l0
+L4
+V?XNjKgG]NH]I6lWR1d_2n3
+R6
+32
+Z107 !s108 1451215316.329000
+Z108 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/Projects/VHDL/PDP11/partA.vhd|
+Z109 !s107 F:/Projects/VHDL/PDP11/partA.vhd|
+R10
+R11
+!s100 f?_UdF@S?9d_GCDlFD6gm2
+!i10b 1
+Apartasynth
+R1
+R2
+DEx4 work 5 parta 0 22 ?XNjKgG]NH]I6lWR1d_2n3
+l29
+L12
+V`bC5;a7HUPOYmA_?U<Dof0
+R6
+32
+R107
+R108
+R109
+R10
+R11
+!s100 NU8iXL;Qo:KOXi1co:_6L1
+!i10b 1
+Epartb
+Z110 w1445597870
+R1
+R2
+R3
+Z111 8F:/Projects/VHDL/PDP11/B.vhd
+Z112 FF:/Projects/VHDL/PDP11/B.vhd
+l0
+L4
+VnNIlD=KzPJLRR:n0?8bBX3
+R6
+32
+Z113 !s108 1450454289.489000
+Z114 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/Projects/VHDL/PDP11/B.vhd|
+Z115 !s107 F:/Projects/VHDL/PDP11/B.vhd|
+R10
+R11
+!s100 =JoFh5jeYkd0hPMK4:HT;1
+!i10b 1
+Apartbarch
+R1
+R2
+DEx4 work 5 partb 0 22 nNIlD=KzPJLRR:n0?8bBX3
+l12
+L11
+VoGic8nf<AZhBAKSiPfn>D1
+R6
+32
+R113
+R114
+R115
+R10
+R11
+!s100 Z`G6zGH]^H8WOVKQ_5LOF0
+!i10b 1
+Epartc
+Z116 w1451217690
+R1
+R2
+R3
+Z117 8F:/Projects/VHDL/PDP11/C.vhd
+Z118 FF:/Projects/VHDL/PDP11/C.vhd
+l0
+L4
+Vmjz@TjEVn;hZUM7bWLEEb2
+R6
+32
+Z119 !s108 1451217696.028000
+Z120 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/Projects/VHDL/PDP11/C.vhd|
+Z121 !s107 F:/Projects/VHDL/PDP11/C.vhd|
+R10
+R11
+!s100 m?Dd]QYUlT>7K4H[VM:[Y3
+!i10b 1
+Apartcarch
+R1
+R2
+DEx4 work 5 partc 0 22 mjz@TjEVn;hZUM7bWLEEb2
+l13
+L12
+Ve@YmCcFdh[O8<?P5eCm4M0
+R6
+32
+R119
+R120
+R121
+R10
+R11
+!s100 m?5<A]6RX5R<3Xc_O^]AC0
+!i10b 1
+Epartd
+Z122 w1451989020
+R1
+R2
+R3
+Z123 8F:/Projects/VHDL/PDP11/D.vhd
+Z124 FF:/Projects/VHDL/PDP11/D.vhd
+l0
+L4
+VGRO]D8IS7L:jHf8HVD;=Z0
+R6
+32
+Z125 !s108 1451989025.870000
+Z126 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/Projects/VHDL/PDP11/D.vhd|
+Z127 !s107 F:/Projects/VHDL/PDP11/D.vhd|
+R10
+R11
+!s100 42`fD=iaX_zhaKXiDD07P2
+!i10b 1
+Apartdarch
+R1
+R2
+DEx4 work 5 partd 0 22 GRO]D8IS7L:jHf8HVD;=Z0
+l13
+L12
+VPeSfQUajXIO>bQQ=Xhh9R0
+R6
+32
+R125
+R126
+R127
+R10
+R11
+!s100 3Y0CD=<1gJeK:KLT8XJlR1
+!i10b 1
+Epdp
+Z128 w1451999121
+R1
+R2
+R3
+Z129 8F:/Projects/VHDL/PDP11/pdp.vhd
+Z130 FF:/Projects/VHDL/PDP11/pdp.vhd
+l0
+L4
+VkKMjLIFlT[f8Hi3WTfML31
+R6
+32
+Z131 !s108 1451999673.365000
+Z132 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/Projects/VHDL/PDP11/pdp.vhd|
+Z133 !s107 F:/Projects/VHDL/PDP11/pdp.vhd|
+R10
+R11
+!s100 [L^X``0^6XNenJ?F8S?Dj1
+!i10b 1
+Apdpsynth
+R41
+R29
+R27
+Z134 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z135 DEx4 work 3 rom 0 22 QTLTGj`>08]LZ[N0mcJ_B1
+R40
+R1
+R2
+Z136 DEx4 work 3 pdp 0 22 kKMjLIFlT[f8Hi3WTfML31
+l24
+L12
+VX_`5?16J75`o2DAIHh9:@3
+R6
+32
+R131
+R132
+R133
+R10
+R11
+!s100 h?6U@A>OO`]GbYnUAR0TQ2
+!i10b 1
+Eram
+Z137 w1445986181
+R27
+R134
+R1
+R2
+R3
+Z138 8F:/Projects/VHDL/PDP11/ram.vhd
+Z139 FF:/Projects/VHDL/PDP11/ram.vhd
+l0
+L7
+VPT>mn52mhOMK[W7C=_U@`2
+R6
+32
+Z140 !s108 1450454297.279000
+Z141 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/Projects/VHDL/PDP11/ram.vhd|
+Z142 !s107 F:/Projects/VHDL/PDP11/ram.vhd|
+R10
+R11
+!s100 Lz`P0CbK5mhV[KDTP5HC=0
+!i10b 1
+Asyncrama
+R27
+R134
+R1
+R2
+Z143 DEx4 work 3 ram 0 22 PT>mn52mhOMK[W7C=_U@`2
+l20
+L16
+VnoZ?@1:j`jD<hbRjI2MQP1
+R6
+32
+R140
+R141
+R142
+R10
+R11
+!s100 hi:H4B69LG:d82zjH6Jd70
+!i10b 1
+Eregfile
+Z144 w1445286800
+R1
+R2
+R3
+Z145 8F:/Projects/VHDL/PDP11/regFile.vhd
+Z146 FF:/Projects/VHDL/PDP11/regFile.vhd
+l0
+L4
+Vm<_2?lX8R?X^LBkS5P^jE2
+R6
+32
+Z147 !s108 1450454300.699000
+Z148 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/Projects/VHDL/PDP11/regFile.vhd|
+Z149 !s107 F:/Projects/VHDL/PDP11/regFile.vhd|
+R10
+R11
+!s100 7c^AhK02AacLQSiI[O?B[3
+!i10b 1
+Aregfilesynth
+R1
+R2
+R38
+l40
+L14
+V6>dCR;RWQ3mN`U8<nKh;01
+R6
+32
+R147
+R148
+R149
+R10
+R11
+!s100 ;9B8JR=S68F[ZlRj?1jXn2
+!i10b 1
+Erom
+Z150 w1450890787
+R27
+R134
+R1
+R2
+R3
+Z151 8F:/Projects/VHDL/PDP11/ROM.vhd
+Z152 FF:/Projects/VHDL/PDP11/ROM.vhd
+l0
+L7
+VQTLTGj`>08]LZ[N0mcJ_B1
+R6
+32
+Z153 !s108 1450890791.116000
+Z154 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/Projects/VHDL/PDP11/ROM.vhd|
+Z155 !s107 F:/Projects/VHDL/PDP11/ROM.vhd|
+R10
+R11
+!s100 ;B[g[Na1X4_PL@RY>B:`@3
+!i10b 1
+Asyncroma
+R27
+R134
+R1
+R2
+R135
+l16
+L13
+VF7@ESEIOM`hg`FKMFEcg[2
+R6
+32
+R153
+R154
+R155
+R10
+R11
+!s100 F1PK]6=fz5TZ7WHemIe:Z2
+!i10b 1
+Especial_regs
+Z156 w1451988214
+R1
+R2
+R3
+Z157 8F:/Projects/VHDL/PDP11/Special_Regs.vhd
+Z158 FF:/Projects/VHDL/PDP11/Special_Regs.vhd
+l0
+L4
+VP`]T7UXPX^1Bi7e0Rc_4Y1
+R6
+32
+Z159 !s108 1451988226.822000
+Z160 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/Projects/VHDL/PDP11/Special_Regs.vhd|
+Z161 !s107 F:/Projects/VHDL/PDP11/Special_Regs.vhd|
+R10
+R11
+!s100 ]I;bmb5McE:hdknd@Q0^B1
+!i10b 1
+Aspecial_regsii
+R39
+R40
+R1
+R2
+R37
+l18
+L12
+VQSkG0[TKX<?14Ugo^9hiz0
+R6
+32
+R159
+R160
+R161
+R10
+R11
+!s100 SEeCgT64O7ioZ2B7z:zHW2
+!i10b 1
+Etestbench
+Z162 w1451998665
+R1
+R2
+R3
+Z163 8F:/Projects/VHDL/PDP11/testbench.vhd
+Z164 FF:/Projects/VHDL/PDP11/testbench.vhd
+l0
+L4
+VZ@WBMde6Bd<9Go_VP^nm_0
+R6
+32
+Z165 !s108 1451998675.563000
+Z166 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/Projects/VHDL/PDP11/testbench.vhd|
+Z167 !s107 F:/Projects/VHDL/PDP11/testbench.vhd|
+R10
+R11
+!s100 G3D0To<TPj=CAA>C<ScQm1
+!i10b 1
+Atest
+Z168 DEx4 work 3 top 0 22 8>nY]XbU_8N8VEi`:1VY10
+R1
+R2
+DEx4 work 9 testbench 0 22 Z@WBMde6Bd<9Go_VP^nm_0
+l10
+L8
+VczUh?U?GKeU6227^7>J[i2
+R6
+32
+R165
+R166
+R167
+R10
+R11
+!s100 D`N<9^bo_E5:loEGn[97g2
+!i10b 1
+Etestbench1
+w1451997780
+R1
+R2
+R3
+R163
+R164
+l0
+L4
+V7`aYjin;^^eCofjnegY>h3
+R6
+32
+R166
+R10
+R11
+R167
+!s100 MQdS7OD4kGgiXUG@o48gk0
+!i10b 1
+!s108 1451997784.602000
+Etop
+Z169 w1452000154
+R1
+R2
+R3
+Z170 8F:/Projects/VHDL/PDP11/top.vhd
+Z171 FF:/Projects/VHDL/PDP11/top.vhd
+l0
+L4
+V8>nY]XbU_8N8VEi`:1VY10
+R6
+32
+Z172 !s108 1452000160.192000
+Z173 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/Projects/VHDL/PDP11/top.vhd|
+Z174 !s107 F:/Projects/VHDL/PDP11/top.vhd|
+R10
+R11
+!s100 BW8zez>[eWzKM7<InG?eN2
+!i10b 1
+Atoparch
+R27
+R134
+R143
+R136
+R1
+R2
+R168
+l13
+L8
+Vj=8M?j]YcPVXdNjJS>I>=0
+R6
+32
+R172
+R173
+R174
+R10
+R11
+!s100 F]FiOAfAXG^_dk?@c>Y<U3
+!i10b 1
+Etri_state
+Z175 w1445287305
+R1
+R2
+R3
+Z176 8F:/Projects/VHDL/PDP11/tri_state.vhd
+Z177 FF:/Projects/VHDL/PDP11/tri_state.vhd
+l0
+L4
+VakEVBdY_@C9J?;^>cJYho1
+R6
+32
+Z178 !s108 1450454301.168000
+Z179 !s90 -reportprogress|300|-work|work|-2002|-explicit|F:/Projects/VHDL/PDP11/tri_state.vhd|
+Z180 !s107 F:/Projects/VHDL/PDP11/tri_state.vhd|
+R10
+R11
+!s100 lk=R>?EieRCEj9F=`YhSO3
+!i10b 1
+Atri_statesynth
+R1
+R2
+R39
+l12
+L11
+VESolUFeEHaeXbGkGgk3ne0
+R6
+32
+R178
+R179
+R180
+R10
+R11
+!s100 jC5iaTmVF30RLKSX8:TUk3
+!i10b 1

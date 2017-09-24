@@ -1,0 +1,237 @@
+F:/Projects/VHDL/PDP11/mux4.vhd {1 {vcom -work work -2002 -explicit F:/Projects/VHDL/PDP11/mux4.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux4_1bit
+-- Compiling architecture Data_flow of mux4_1bit
+
+} {} {}} F:/Projects/VHDL/PDP11/ROM.vhd {1 {vcom -work work -2002 -explicit F:/Projects/VHDL/PDP11/ROM.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package NUMERIC_STD_UNSIGNED
+-- Compiling entity rom
+-- Compiling architecture syncroma of rom
+
+} {} {}} F:/Projects/VHDL/PDP11/regFile.vhd {1 {vcom -work work -2002 -explicit F:/Projects/VHDL/PDP11/regFile.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity regFile
+-- Compiling architecture regFileSynth of regFile
+
+} {} {}} F:/Projects/VHDL/PDP11/datapath.vhd {1 {vcom -work work -2002 -explicit F:/Projects/VHDL/PDP11/datapath.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD_UNSIGNED
+-- Compiling entity datapath
+-- Compiling architecture datapathSynth of datapath
+-- Loading entity my_nDFF
+-- Loading entity tri_state
+-- Loading entity regFile
+-- Loading entity Special_Regs
+-- Loading entity ALSU
+-- Loading entity flags
+
+} {} {}} F:/Projects/VHDL/PDP11/tri_state.vhd {1 {vcom -work work -2002 -explicit F:/Projects/VHDL/PDP11/tri_state.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tri_state
+-- Compiling architecture tri_stateSynth of tri_state
+
+} {} {}} F:/Projects/VHDL/PDP11/control_unit.vhd {1 {vcom -work work -2002 -explicit F:/Projects/VHDL/PDP11/control_unit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity control_unit
+-- Compiling architecture control_unit_impl of control_unit
+-- Loading package NUMERIC_STD_UNSIGNED
+-- Loading entity decoder
+
+} {} {}} F:/Projects/VHDL/PDP11/testbench.vhd {1 {vcom -work work -2002 -explicit F:/Projects/VHDL/PDP11/testbench.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity testbench
+-- Compiling architecture test of testbench
+-- Loading entity Top
+
+} {} {}} F:/Projects/VHDL/PDP11/ram.vhd {1 {vcom -work work -2002 -explicit F:/Projects/VHDL/PDP11/ram.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package NUMERIC_STD_UNSIGNED
+-- Compiling entity ram
+-- Compiling architecture syncrama of ram
+
+} {} {}} F:/Projects/VHDL/PDP11/mux_seq.vhd {1 {vcom -work work -2002 -explicit F:/Projects/VHDL/PDP11/mux_seq.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux_seq
+-- Compiling architecture a_mux_seq of mux_seq
+-- Compiling architecture b_mux_seq of mux_seq
+-- Loading entity mux_seq
+
+} {} {}} F:/Projects/VHDL/PDP11/mux8.vhd {1 {vcom -work work -2002 -explicit F:/Projects/VHDL/PDP11/mux8.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Compiling entity mux8
+-- Compiling architecture struct of mux8
+
+} {} {}} F:/Projects/VHDL/PDP11/top.vhd {1 {vcom -work work -2002 -explicit F:/Projects/VHDL/PDP11/top.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Top
+-- Compiling architecture TopArch of Top
+-- Loading entity pdp
+-- Loading package NUMERIC_STD
+-- Loading package NUMERIC_STD_UNSIGNED
+-- Loading entity ram
+
+} {} {}} F:/Projects/VHDL/PDP11/my_ndff.vhd {1 {vcom -work work -2002 -explicit F:/Projects/VHDL/PDP11/my_ndff.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity my_nDFF
+-- Compiling architecture a_my_nDFF of my_nDFF
+
+} {} {}} F:/Projects/VHDL/PDP11/mux_df.vhd {1 {vcom -work work -2002 -explicit F:/Projects/VHDL/PDP11/mux_df.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux4
+-- Compiling architecture Data_flow of mux4
+
+} {} {}} F:/Projects/VHDL/PDP11/my_adder.vhd {1 {vcom -work work -2002 -explicit F:/Projects/VHDL/PDP11/my_adder.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity my_adder
+-- Compiling architecture a_my_adder of my_adder
+-- Compiling entity adder
+-- Compiling architecture adderSynth of adder
+
+} {} {}} F:/Projects/VHDL/PDP11/decoder.vhd {1 {vcom -work work -2002 -explicit F:/Projects/VHDL/PDP11/decoder.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD_UNSIGNED
+-- Compiling entity decoder
+-- Compiling architecture decoderSynth of decoder
+
+} {} {}} F:/Projects/VHDL/PDP11/partA.vhd {1 {vcom -work work -2002 -explicit F:/Projects/VHDL/PDP11/partA.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity partA
+-- Compiling architecture partASynth of partA
+
+} {} {}} F:/Projects/VHDL/PDP11/mux_beh.vhd {1 {vcom -work work -2002 -explicit F:/Projects/VHDL/PDP11/mux_beh.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux
+-- Compiling architecture behav of mux
+
+} {} {}} F:/Projects/VHDL/PDP11/Special_Regs.vhd {1 {vcom -work work -2002 -explicit F:/Projects/VHDL/PDP11/Special_Regs.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Special_Regs
+-- Compiling architecture Special_RegsII of Special_Regs
+-- Loading entity my_nDFF
+-- Loading entity tri_state
+
+} {} {}} F:/Projects/VHDL/PDP11/B.vhd {1 {vcom -work work -2002 -explicit F:/Projects/VHDL/PDP11/B.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity partB
+-- Compiling architecture partBArch of partB
+
+} {} {}} F:/Projects/VHDL/PDP11/C.vhd {1 {vcom -work work -2002 -explicit F:/Projects/VHDL/PDP11/C.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity partC
+-- Compiling architecture partCArch of partC
+
+} {} {}} F:/Projects/VHDL/PDP11/pdp.vhd {1 {vcom -work work -2002 -explicit F:/Projects/VHDL/PDP11/pdp.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity pdp
+-- Compiling architecture pdpSynth of pdp
+-- Loading entity my_nDFF
+-- Loading package NUMERIC_STD
+-- Loading package NUMERIC_STD_UNSIGNED
+-- Loading entity rom
+-- Loading entity control_unit
+-- Loading entity datapath
+
+} {} {}} F:/Projects/VHDL/PDP11/D.vhd {1 {vcom -work work -2002 -explicit F:/Projects/VHDL/PDP11/D.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity partD
+-- Compiling architecture partDArch of partD
+
+} {} {}} F:/Projects/VHDL/PDP11/mux2.vhd {1 {vcom -work work -2002 -explicit F:/Projects/VHDL/PDP11/mux2.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Compiling entity mux2
+-- Compiling architecture Data_flow of mux2
+
+} {} {}} F:/Projects/VHDL/PDP11/ALSU.vhd {1 {vcom -work work -2002 -explicit F:/Projects/VHDL/PDP11/ALSU.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ALSU
+-- Compiling architecture ALSUI of ALSU
+-- Loading entity mux4_1bit
+
+} {} {}} F:/Projects/VHDL/PDP11/flags.vhd {1 {vcom -work work -2002 -explicit F:/Projects/VHDL/PDP11/flags.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity flags
+-- Compiling architecture a_flags of flags
+
+} {} {}} F:/Projects/VHDL/PDP11/my_dff.vhd {1 {vcom -work work -2002 -explicit F:/Projects/VHDL/PDP11/my_dff.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity my_DFF
+-- Compiling architecture a_my_DFF of my_DFF
+
+} {} {}}
